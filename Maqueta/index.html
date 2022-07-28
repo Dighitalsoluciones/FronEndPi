@@ -9,48 +9,58 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     
-    
-</head>
+    </head>
 <body>
-  
-  <nav class="navbar navbar-dark bg-dark" style="padding: 10px">
-    <a class="navbar-brand" href="#">
-      <img class="d-inline-block align-top" src="https://i.ibb.co/5R7mBQ3/fotoperfil.jpg" width="30" height="30" class="d-inline-block align-top" style="border-radius: 50%; margin-left: 10px;" Hernán Glomba>
-      Hernan Glomba
-    </a>
-    <div class="container">
-      <div class="row">
-         <div class="col-sm-12" style="margin-left: 1000px; margin-top: -40px;"> 
-          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-right: 10px; background-color: blue;"><i class="fa-brands fa-square-facebook fa-2x"></i></button>
-          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-right: 10px; background-color: #ac2bac;"><i class="fa-brands fa-square-instagram fa-2x"></i></button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-right: 10px;">Login</button>
-        </div>
-      </div>
-    </div>     
-  </nav>
+  <!--Barra de navegacion y iconos de redes-->
+ <div class="container-fluid" style="background-color: #212429;">
+  <div class="row">
+    <div class="col-md-10">
+      <nav class="navbar navbar-dark bg-dark" style="padding: 10px">
+        <a class="navbar-brand" href="#">
+          <img class="d-inline-block align-top" src="https://i.ibb.co/5R7mBQ3/fotoperfil.jpg" width="30" height="30" class="d-inline-block align-top" style="border-radius: 50%; margin-left: 10px;">
+          Hernan Glomba
+        </a>
+      </nav>   
+    </div>
+       <div class="col-md-2" style="padding: 10px">
+           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="background-color: blue;"><i class="fa-brands fa-square-facebook fa-2x"></i></button>
+           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="background-color: #ac2bac;"><i class="fa-brands fa-square-instagram fa-2x"></i></button>
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+       </div>
+  </div>
+ </div> 
 
 <!--Primer tarjeta-->
-<div class="card mb-3" style="padding: 10px; border-radius: 2%;">
-    <img class="card-img-top" src="https://snipboard.io/jzd2Om.jpg" alt="portadadefondo" style="margin-top: 5px;">
-    <div class="card-body">
-        <img id="fotoperfil" src="https://i.ibb.co/5R7mBQ3/fotoperfil.jpg" alt="fotoperfil" > 
-      <h5 class="card-title" style="margin-left: 15px;">Hernán Andres Glomba</h5>
-      <p class="card-text" style="margin-left: 40px;">Argentina Programa</p>
-      <p class="card-text"><small class="text-muted" style="margin-left: 10px;">José Marmol, Buenos Aires, Argentina</small></p>
+<div class="row">
+  <div class="col-12">
+    <div class="card mb-3" style="padding: 10px; border-radius: 2%;">
+        <img class="card-img-top" src="https://snipboard.io/jzd2Om.jpg" alt="portadadefondo" style="margin-top: 5px;">
+      <div class="card-body">
+        <img class="img-fluid" id="fotoperfil" src="https://i.ibb.co/5R7mBQ3/fotoperfil.jpg" alt="fotoperfil" > 
+        <h5 class="card-title"> Hernán Andres Glomba</h5>
+        <p class="card-text"> Argentina Programa</p>
+        <p class="card-text"><small class="text-muted"> José Marmol, Buenos Aires, Argentina</small></p>
       <button type="button" class="btn btn-info">Tengo interes en</button>
       <button type="button" class="btn btn-light">Añadir sección</button>
       <button type="button" class="btn btn-light">Más</button>
       </div>
-  </div>
-
-  <!--Segunda tarjeta-->
-  <div class="card mb-3" style="padding: 10px; border-radius: 2%;">  
-    <div class="card-body">
-      <h5 class="card-title" style="margin-left: 15px;">Acerca de</h5>
-      <p class="card-text" style="margin-left: 15px;">Developer Full Stack Jr <button class="btn btn-outline-dark my-2 my-sm-0"><i class="fa-solid fa-pen-to-square"></i></button></p>
-      
     </div>
-  </div> 
+  </div>
+</div>
+
+<!--Segunda tarjeta-->
+  <div class="row">
+    <div class="col-md-12 container-fluid">
+      <div class="card mb-3" style="padding: 10px; border-radius: 2%;">  
+        <div class="card-body" style="border-radius: 5%;">
+          <h5 class="card-title" style="margin-left: 15px;">Acerca de </h5>
+          <p class="card-text" style="margin-left: 15px;">Developer Full Stack Jr 
+            <button class="btn btn-outline-dark my-2 my-sm-0 rounded float-end"><i class="fa-solid fa-pen-to-square"></i></button> </p> 
+        </div>
+      </div>
+    </div> 
+  </div>
+  
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
