@@ -27,16 +27,42 @@
     height: 10%;
     position: sticky;
     margin-top: -10%;
+    z-index: 1;
+    
     }
     
 .fondo-tarjeta{
     background-image: url("https://snipboard.io/jzd2Om.jpg");
+    border-radius: 32px;
 }
 .card-text{
     color:whitesmoke;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 #bajo-foto{
     color: black;
+}
+
+.logo-miniatura{
+    float: left;
+    height: 40px;
+    width: 40px;
+   
+}
+
+.format-experiencias{
+    margin: 0px 50px;
+}
+
+h6.format-experiencias{
+    font-family: Impact;
+}
+
+p.format-experiencias{
+    color:darkcyan;
+}
+
+.lista-exp{
+    margin-top: 20px;
 }
