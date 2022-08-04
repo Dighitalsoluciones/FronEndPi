@@ -19,6 +19,7 @@
 
 .espaciado-botones{
     margin: 1px;
+   
 }
 
 #fotoperfil{
@@ -42,6 +43,12 @@
 
 #bajo-foto{
     color: black;
+}
+
+#editar-acercade{
+    width: 100%;
+    border-radius: 30px;
+
 }
 
 .logo-miniatura{

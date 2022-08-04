@@ -56,8 +56,8 @@
       <div class="card mb-3 fondo-tarjeta">  
         <div class="card-body" style="border-radius: 32px;">
           <h5 class="card-text">Acerca de </h5>
-           <p class="card-text" id="acercade">Desarrollador de sistemas de gestión empresarial, Scrum Master
-            <button class="btn btn-outline-light my-2 my-sm-0 rounded float-end" onclick="cambiartexto()"><i class="fa-solid fa-pen-to-square"></i></button> </p> 
+          <button class="btn btn-outline-light my-2 my-sm-0 rounded float-end" id="boton-ed-acercade" onclick="cambiartexto()"><i class="fa-solid fa-pen-to-square"></i></button> 
+           <p class="card-text" id="acercade">Desarrollador de sistemas de gestión empresarial, Scrum Master</p>
             <input id="editar-acercade" type="text" oninput="agrega_texto(this.value)" style="display: none">
         </div>
       </div>
@@ -94,17 +94,18 @@
     document.getElementById("editar-acercade").style.display="block";
     let texto = document.getElementById("acercade").innerText;
     console.log(texto);
+    document.getElementById("boton-ed-acercade").style.display="none";
   }
   
   function agrega_texto(valor){
     document.getElementById("acercade").innerText=valor;
   }
-  
+
   let textarea=document.getElementById("editar-acercade")
-  textarea.addEventListener('keyup' , (e) => {
-    logMessage(`Key "${e.key}" released [event: keyup]`);
-    if (e.key=="Enter"){
-      document.getElementById("editar-acercade").style.display="none"
+  textarea.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      document.getElementById("editar-acercade").style.display="none";
+      document.getElementById("boton-ed-acercade").style.display="block";
     }
   });
   
