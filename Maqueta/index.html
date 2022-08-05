@@ -56,7 +56,7 @@
       <div class="card mb-3 fondo-tarjeta">  
         <div class="card-body" style="border-radius: 32px;">
           <h5 class="card-text">Acerca de </h5>
-          <button class="btn btn-outline-light my-2 my-sm-0 rounded float-end" id="boton-ed-acercade" onclick="cambiartexto()"><i class="fa-solid fa-pen-to-square"></i></button> 
+          <button class="btn btn-outline-light my-2 my-sm-0 rounded float-end" id="boton-ed-acercade" onclick="cambiartexto()" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button> 
            <p class="card-text" id="acercade">Desarrollador de sistemas de gestión empresarial, Scrum Master</p>
             <input id="editar-acercade" type="text" oninput="agrega_texto(this.value)" style="display: none">
         </div>
@@ -70,25 +70,65 @@
       <div class="card mb-3" style="border-radius: 32px;">  
         <div class="card-body">
           <h5 style="margin: 15px;">Experiencias</h5>
+          <div>
+            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Eliminar"><i class="fa-solid fa-trash-can"></i></button>
+            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Agregar"><i class="fa-solid fa-plus"></i></button>
+            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+          </div>
            <ul class="lista-exp">
             <li>
               <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659454739/IMG%20PROYECTO%20INTEGRADOR/logodeveloper_lqwodl.png"> 
-              <h6 class="format-experiencias">Frontend Developer</h6>
+              <h6 class="format-experiencias">Full Stack Jr. Developer</h6>
               <p class="format-experiencias">Independiente</p>
-              <p class="format-experiencias">marzo 2020 - actualidad</p>
-              <p class="format-experiencias">Argentina</p>
-          
+              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
+              <p class="format-experiencias">Buenos Aires, Argentina</p>
             </li>
-            <li class="lista-exp"> Desarrollador de sistemas de gestión empresarial, Scrum Master
-              
-              </li>
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659701575/IMG%20PROYECTO%20INTEGRADOR/disenografico_a9q02p.jpg"> 
+              <h6 class="format-experiencias">Diseñador de Packaging</h6>
+              <p class="format-experiencias">Helados Tirreno</p>
+              <p class="format-experiencias">Agosto 2009 - Actualidad</p>
+              <p class="format-experiencias">La porteña 1341, Llavallol, Buenos Aires, Argentina</p>       
+            </li>
            </ul> 
         </div>
       </div>
     </div> 
   </div>
 
-  <!--Para cambiar contenido de la tarjeta-->
+   <!---Cuarta tarjeta-->
+   <div class="row card-format">
+    <div class="col-md-12 container-fluid">
+      <div class="card mb-3" style="border-radius: 32px;">  
+        <div class="card-body">
+          <h5 style="margin: 15px;">Experiencias</h5>
+          <div>
+            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Eliminar"><i class="fa-solid fa-trash-can"></i></button>
+            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Agregar"><i class="fa-solid fa-plus"></i></button>
+            <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+          </div>
+           <ul class="lista-exp">
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659454739/IMG%20PROYECTO%20INTEGRADOR/logodeveloper_lqwodl.png"> 
+              <h6 class="format-experiencias">Full Stack Jr. Developer</h6>
+              <p class="format-experiencias">Independiente</p>
+              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
+              <p class="format-experiencias">Buenos Aires, Argentina</p>
+            </li>
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659701575/IMG%20PROYECTO%20INTEGRADOR/disenografico_a9q02p.jpg"> 
+              <h6 class="format-experiencias">Diseñador de Packaging</h6>
+              <p class="format-experiencias">Helados Tirreno</p>
+              <p class="format-experiencias">Agosto 2009 - Actualidad</p>
+              <p class="format-experiencias">La porteña 1341, Llavallol, Buenos Aires, Argentina</p>       
+            </li>
+           </ul> 
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <!--Para cambiar contenido de la segunda tarjeta-->
 <script>
   function cambiartexto(){
     document.getElementById("editar-acercade").style.display="block";
@@ -108,8 +148,7 @@
       document.getElementById("boton-ed-acercade").style.display="block";
     }
   });
-  
-  </script>
+    </script>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
