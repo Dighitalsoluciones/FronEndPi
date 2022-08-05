@@ -55,7 +55,7 @@
     <div class="col-md-12 container-fluid">
       <div class="card mb-3 fondo-tarjeta">  
         <div class="card-body" style="border-radius: 32px;">
-          <h5 class="card-text">Acerca de </h5>
+          <a href="#" class="brillo">A cerca de<span></span></a>
           <button class="btn btn-outline-light my-2 my-sm-0 rounded float-end" id="boton-ed-acercade" onclick="cambiartexto()" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button> 
            <p class="card-text" id="acercade">Desarrollador de sistemas de gestión empresarial, Scrum Master</p>
             <input id="editar-acercade" type="text" oninput="agrega_texto(this.value)" style="display: none">
@@ -67,9 +67,9 @@
   <!---Tercer tarjeta-->
    <div class="row card-format">
     <div class="col-md-12 container-fluid">
-      <div class="card mb-3" style="border-radius: 32px;">  
+      <div class="card mb-3" style="border-radius: 32px; background-color: darkseagreen;">  
         <div class="card-body">
-          <h5 style="margin: 15px;">Experiencias</h5>
+          <a href="#" class="brillo">Experiencias<span></span></a>
           <div>
             <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Eliminar"><i class="fa-solid fa-trash-can"></i></button>
             <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Agregar"><i class="fa-solid fa-plus"></i></button>
@@ -84,8 +84,15 @@
               <p class="format-experiencias">Buenos Aires, Argentina</p>
             </li>
             <li>
-              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659701575/IMG%20PROYECTO%20INTEGRADOR/disenografico_a9q02p.jpg"> 
-              <h6 class="format-experiencias">Diseñador de Packaging</h6>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659711140/IMG%20PROYECTO%20INTEGRADOR/logoglide_chmedf.jpg"> 
+              <h6 class="format-experiencias">Desarrollador de Aplicaciones Low-Code</h6>
+              <p class="format-experiencias">Plataforma Glide</p>
+              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
+              <p class="format-experiencias">Buenos Aires, Argentina</p>
+            </li>
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659712020/IMG%20PROYECTO%20INTEGRADOR/LOGO_TIRRENO_NUEVO_mbiff6.png"> 
+              <h6 class="format-experiencias">Diseñador de Packaging y Aplicaciones Internas</h6>
               <p class="format-experiencias">Helados Tirreno</p>
               <p class="format-experiencias">Agosto 2009 - Actualidad</p>
               <p class="format-experiencias">La porteña 1341, Llavallol, Buenos Aires, Argentina</p>       
@@ -99,9 +106,9 @@
    <!---Cuarta tarjeta-->
    <div class="row card-format">
     <div class="col-md-12 container-fluid">
-      <div class="card mb-3" style="border-radius: 32px;">  
+      <div class="card mb-3" style="border-radius: 32px; background-color: lightblue;">  
         <div class="card-body">
-          <h5 style="margin: 15px;">Experiencias</h5>
+          <a href="#" class="brillo">Educación<span></span></a>
           <div>
             <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Eliminar"><i class="fa-solid fa-trash-can"></i></button>
             <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Agregar"><i class="fa-solid fa-plus"></i></button>
@@ -109,24 +116,87 @@
           </div>
            <ul class="lista-exp">
             <li>
-              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659454739/IMG%20PROYECTO%20INTEGRADOR/logodeveloper_lqwodl.png"> 
-              <h6 class="format-experiencias">Full Stack Jr. Developer</h6>
-              <p class="format-experiencias">Independiente</p>
-              <p class="format-experiencias">Marzo 2020 - Actualidad</p>
-              <p class="format-experiencias">Buenos Aires, Argentina</p>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659710838/IMG%20PROYECTO%20INTEGRADOR/logo-cer-v2_k0mc9w.png"> 
+              <h6 class="format-experiencias">Técnico en Refrigeracíon y Aire Acondicionado</h6>
+              <p class="format-experiencias">CER</p>
+              <p class="format-experiencias">Marzo 2011 - Agosto 2011</p>
+              <p class="format-experiencias">Temperley, Buenos Aires, Argentina</p>
             </li>
             <li>
-              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659701575/IMG%20PROYECTO%20INTEGRADOR/disenografico_a9q02p.jpg"> 
-              <h6 class="format-experiencias">Diseñador de Packaging</h6>
-              <p class="format-experiencias">Helados Tirreno</p>
-              <p class="format-experiencias">Agosto 2009 - Actualidad</p>
-              <p class="format-experiencias">La porteña 1341, Llavallol, Buenos Aires, Argentina</p>       
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659708541/IMG%20PROYECTO%20INTEGRADOR/logounla_l61o5n.png"> 
+              <h6 class="format-experiencias">Licenciatura en Ciencia y Tecnologías de los Alimentos</h6>
+              <p class="format-experiencias">UNla</p>
+              <p class="format-experiencias">Marzo 2009 - 1,5 año completos</p>
+              <p class="format-experiencias">Lanús, Buenos Aires, Argentina</p>
+            </li>        
+            <li>
+              <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659711561/IMG%20PROYECTO%20INTEGRADOR/logoeuskal_ih0alt.png"> 
+              <h6 class="format-experiencias">Bachiller con Orientacion en Ciencias Naturales</h6>
+              <p class="format-experiencias">Instituto Euskal-Echea Llavallol</p>
+              <p class="format-experiencias">Marzo 2006 - Diciembre 2008</p>
+              <p class="format-experiencias">Llavallol, Buenos Aires, Argentina</p>       
             </li>
            </ul> 
         </div>
       </div>
     </div> 
   </div>
+  
+<!---Quinta tarjeta-->
+<div class="row card-format">
+  <div class="col-md-12 container-fluid">
+    <div class="card mb-3" style="border-radius: 32px; background-color:navajowhite">  
+      <div class="card-body">
+        <a href="#" class="brillo">H & S Skills<span></span></a>
+        <div>
+          <img class="img-fluid" src="https://quickchart.io/chart?c=%7B%0A%20%20type%3A%20%27polarArea%27%2C%0A%20%20data%3A%20%7B%0A%20%20%20%20datasets%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20data%3A%20%5B90%2C%2060%2C%2080%2C%200%2C%2099%5D%2C%0A%20%20%20%20%20%20%20%20backgroundColor%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%27rgba(255%2C%2099%2C%20132%2C%200.5)%27%2C%0A%20%20%20%20%20%20%20%20%20%20%27rgba(255%2C%20159%2C%2064%2C%200.5)%27%2C%0A%20%20%20%20%20%20%20%20%20%20%27rgba(255%2C%20205%2C%2086%2C%200.5)%27%2C%0A%20%20%20%20%20%20%20%20%20%20%27rgba(75%2C%20192%2C%20192%2C%200.5)%27%2C%0A%20%20%20%20%20%20%20%20%20%20%27rgba(54%2C%20162%2C%20235%2C%200.5)%27%2C%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20label%3A%20%27My%20dataset%27%2C%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%5D%2C%0A%20%20%20%20labels%3A%20%5B%27Trabajo%20en%20Equipo%27%2C%20%27Dise%C3%B1o%20de%20Sistemas%27%2C%20%27Proceso%20de%20Desarrollo%27%2C%20%27Resolucion%20de%20Problemas%27%5D%2C%0A%20%20%7D%2C%0A%20%20options%3A%20%7B%0A%20%20%20%20legend%3A%20%7B%0A%20%20%20%20%20%20position%3A%20%27right%27%2C%0A%20%20%20%20%7D%2C%0A%20%20%20%20title%3A%20%7B%0A%20%20%20%20%20%20display%3A%20true%2C%0A%20%20%20%20%20%20text%3A%20%27%27%2C%0A%20%20%20%20%7D%2C%0A%20%20%7D%2C%0A%7D%0A">
+          <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Eliminar"><i class="fa-solid fa-trash-can"></i></button>
+          <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Agregar"><i class="fa-solid fa-plus"></i></button>
+          <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!---Sexta tarjeta-->
+<div class="row card-format">
+  <div class="col-md-12 container-fluid">
+    <div class="card mb-3" style="border-radius: 32px; background-color: lightblue;">  
+      <div class="card-body">
+        <a href="#" class="brillo">Proyectos<span></span></a>
+        <div>
+          <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Eliminar"><i class="fa-solid fa-trash-can"></i></button>
+          <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Agregar"><i class="fa-solid fa-plus"></i></button>
+          <button class="btn btn-outline-dark rounded float-end espaciado-botones" title="Editar"><i class="fa-solid fa-pen-to-square"></i></button>
+        </div>
+         <ul class="lista-exp">
+          <li>
+            <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659712020/IMG%20PROYECTO%20INTEGRADOR/LOGO_TIRRENO_NUEVO_mbiff6.png"> 
+            <h6 class="format-experiencias">App de pedidos Helados Tirreno</h6>
+            <p class="format-experiencias">Desarrollo con la plataforma Glide (LowCode) por el cual un cliente puede realizar un pedido en simples paso sin registro previo y el cual es enviado por Whatsapp, con todo el resumen de los datos para la entrega</p>
+            <p class="format-experiencias">Marzo 2020</p>
+            <p class="format-experiencias"><a href="https://heladostirreno.glideapp.io">Link a la app</a></p>
+          </li>
+          <li>
+            <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659721546/IMG%20PROYECTO%20INTEGRADOR/2_asjgvq.png"> 
+            <h6 class="format-experiencias">App de sistema de reservas para Fitness Club Cross Box</h6>
+            <p class="format-experiencias">Desarrollo con la plataforma Glide (LowCode) por el cual un cliente puede crear un perfil, realizar reservas de los turnos segun la actividad a desarrollar en el gimnacio, ver turnos tomados, ver clases pagas, etc.</p>
+            <p class="format-experiencias">Marzo 2020</p>
+            <p class="format-experiencias"><a href="https://crossbox.glideapp.io">Link a la app</a></p>
+          </li>
+          <li>
+            <img class="logo-miniatura" src="https://res.cloudinary.com/dighitalsoluciones/image/upload/v1659712020/IMG%20PROYECTO%20INTEGRADOR/LOGO_TIRRENO_NUEVO_mbiff6.png"> 
+            <h6 class="format-experiencias">App de Diagnostico Covid-19 para ingreso a Establecimiento Helados Tirreno</h6>
+            <p class="format-experiencias">Desarrollo con la plataforma Glide (LowCode) por el cual un empleado todos los dias al ingresar al Establecimiento completaba un diagnostico sobre Covid-19, los mismos eran recepcionados por una app Terminal controlada por el empleador</p>
+            <p class="format-experiencias">Marzo 2020</p>
+            <p class="format-experiencias"><a href="https://tirrenotecuida.glideapp.io">Link a la app</a></p>
+          </li>
+         </ul> 
+      </div>
+    </div>
+  </div> 
+</div>
 
   <!--Para cambiar contenido de la segunda tarjeta-->
 <script>
