@@ -2,8 +2,6 @@
     color: red;
     font-size: 25px;
     font-family: Impact;
-
-    
 }
 
 .card-format{
@@ -97,7 +95,6 @@ p.format-experiencias{
 .brillo span{
     position:relative;
     display: block;
-    background:url(brillo.png) no-repeat;  
     background-position: -100px 0px;
     margin-top:-75px;
     height: 70px;
