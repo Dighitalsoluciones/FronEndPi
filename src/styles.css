@@ -21,6 +21,11 @@
    
 }
 
+.espaciado-btn-redes{
+    display: inline-block; 
+    margin-right: 3px;
+}
+
 #fotoperfil{
     border-radius: 50%;  
     width: 15%; 
