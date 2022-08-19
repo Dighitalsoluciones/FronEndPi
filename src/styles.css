@@ -28,13 +28,12 @@
 
 #fotoperfil{
     border-radius: 50%;  
-    width: 15%; 
+    width: 10%; 
     height: 10%;
     position: sticky;
-    margin-top: -10%;
+    margin-top: -8%;
     z-index: 1;
-    margin-left: -15px;
-    
+        
     }
     
 .fondo-tarjeta{
