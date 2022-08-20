@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PrincipalPorfolioService {
 
+  
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any>{
