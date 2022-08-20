@@ -69,6 +69,8 @@
           "configurations": {
             "production": {
               "browserTarget": "ProyectoIntegradorFront:build:production"
+              
+
             },
             "development": {
               "browserTarget": "ProyectoIntegradorFront:build:development"

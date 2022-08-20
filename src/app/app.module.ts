@@ -9,6 +9,7 @@ import { ExperienciasComponent } from './componentes/experiencias/experiencias.c
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { HysSkillsComponent } from './componentes/hys-skills/hys-skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { PrincipalPorfolioService } from './servicios/principal-porfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({

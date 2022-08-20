@@ -7,11 +7,15 @@ import { PrincipalPorfolioService } from 'src/app/servicios/principal-porfolio.s
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit {
+  miPorfolio:any;
 
   constructor(private datosPorfolio:PrincipalPorfolioService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos();
+    this.datosPorfolio.obtenerDatos().subscribe(data =>{
+      console.log(data);
+      this.miPorfolio=data;
+    });
   }
 
 }

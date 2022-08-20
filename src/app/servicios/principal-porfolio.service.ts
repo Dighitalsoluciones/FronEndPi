@@ -11,6 +11,7 @@ export class PrincipalPorfolioService {
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any>{
-    return this.http.get('json');
+    return this.http.get('https://apiportfolioarg.herokuapp.com/ver/encabezado');
+     
   }
 }
