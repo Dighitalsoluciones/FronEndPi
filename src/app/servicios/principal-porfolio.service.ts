@@ -12,7 +12,7 @@ export class PrincipalPorfolioService {
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any>{
-    return this.http.get('https://apiportfolioarg.herokuapp.com/ver/encabezado');
+    return this.http.get('api/ver/encabezado');
      
   }
 }

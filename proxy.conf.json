@@ -1,5 +1,5 @@
 {
-    "/encabezado/*":{
+    "/api/*":{
         "target": "https://apiportfolioarg.herokuapp.com",
         "secure":true,
         "logLevel":"debug",
