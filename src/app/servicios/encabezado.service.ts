@@ -8,7 +8,7 @@ import { encabezado } from '../model/encabezado.model';
 })
 
 export class EncabezadoService {
-  URL = 'http://localhost:8080/api/';
+  URL = 'https://backendportarg.herokuapp.com/';
 
   constructor(private http: HttpClient) { }
 
