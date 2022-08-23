@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PrincipalPorfolioService } from 'src/app/servicios/principal-porfolio.service';
+import { encabezado } from 'src/app/model/encabezado.model';
+import { EncabezadoService } from 'src/app/servicios/encabezado.service';
+
 
 @Component({
   selector: 'app-encabezado',
@@ -7,15 +9,13 @@ import { PrincipalPorfolioService } from 'src/app/servicios/principal-porfolio.s
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit {
-  miPorfolio:any;
+  encabezado: encabezado = new encabezado("", "", "", "");
 
-  constructor(private datosPorfolio:PrincipalPorfolioService) { }
+  constructor(public encabezadoService: EncabezadoService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.miPorfolio=data;
-    });
+    this.encabezadoService.obtenerEncabezado().subscribe(data => {this.encabezado = data})
+    
   }
 
 }
